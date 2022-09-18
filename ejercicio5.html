@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> EJERCICIO 3</title>
+</head>
+
+<body>
+    <script>
+        var codigo, menu, num1, num2, suma, resp, pre;
+        do{
+            menu="Menú\n\n";
+        menu+="1. suma\n ";
+        menu+="2. Primavera\n ";
+        menu+="3. Otoño\n ";
+        menu+="4. Verano\n ";
+        menu+="5. salir\n ";
+        codigo=parseInt(prompt(menu));
+
+        switch(codigo){
+            case 1: 
+            num1=parseInt(prompt("ingrese el número 1"));
+            num2=parseInt(prompt("ingrese el número 2"));
+            suma = num1+num2;
+            resp= "la suma es: "+suma;
+            alert(resp);
+
+            break;
+
+            case 2: document.write("primavera");
+            break;
+
+            case 3: document.write("otoño");
+            break;
+
+            case 4: document.write("verano");
+            break;
+
+            case 5:
+                exit;
+            break;
+            default: document.write("elcodigo no existe!!")
+        }
+        }while(codigo!=5);
+       
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> EJERCICIO2</title>
+</head>
+
+<body>
+    <script>
+        var sueldo, hE, totalHE;
+
+        sueldo = parseFloat(prompt("ingrese su sueldo"));
+        document.write("sueldo base: " + sueldo + "<br>");
+
+        hE = parseFloat(prompt("ingrese el número de horas trabajadas: "));
+        document.write("Hrs Extras: " + hE + "<br>");
+
+        totalHE = hE * 3000;
+        sueldoTotal = sueldo + totalHE;
+        document.write("su sueldo total es: " + sueldoTotal);
+        alert("su sueldo total es: " + sueldoTotal);
+    </script>
+</body>
+
+</html>

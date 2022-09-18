@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> EJERCICIO 3</title>
+</head>
+
+<body>
+    <script>
+        var valorCompra, descuentoApli, valorFinal;
+
+        valorCompra=parseFloat(prompt("ingrese el valor de la compra realizada: "));
+        document.write("valor de la compra: "+valorCompra+"<br>");
+        
+        descuentoApli=0;
+        valorFinal=valorCompra;
+
+        if(valorCompra>=100000){
+            descuentoApli = valorCompra*0.50;
+            valorFinal=valorCompra-descuentoApli;
+            document.write("se aplicó un descuento equivalente a: "+descuentoApli+"<br>");
+            document.write("el valor de la compra es: "+valorFinal);
+        }else{
+            descuentoApli = valorCompra*0.10;
+            valorFinal = valorCompra-descuentoApli;
+            document.write("se aplicó un descuento equivalente a: "+descuentoApli+"<br>");
+            document.write("el valor de la compra es: "+valorFinal);
+        }
+        
+    </script>
+</body>
+
+</html>
